@@ -1,3 +1,4 @@
-import generateMainContent from "./main-page";
+import generateMainContent from "./Home";
+import generateContactsPage from "./Contacts";
 
 generateMainContent();

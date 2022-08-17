@@ -1,6 +1,8 @@
-function generateMainContent() {
+import createContactUsTab from "./Contacts";
+import createMenuTab from "./Menu";
+
+function generateHomePage() {
   const mainDiv = document.querySelector("#content");
-  console.log(mainDiv);
 
   const background = document.createElement("img");
   background.src = "../assets/mainpage.jpg";
@@ -15,6 +17,12 @@ function generateMainContent() {
   mainDiv.appendChild(background);
   mainDiv.appendChild(mainText);
   mainDiv.appendChild(mainText2);
+
+  function createTabs() {
+    createMenuTab();
+  }
+  createTabs();
+  createContactUsTab();
 }
 
-export default generateMainContent;
+export default generateHomePage;
