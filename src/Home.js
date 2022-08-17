@@ -18,11 +18,12 @@ function generateHomePage() {
   mainDiv.appendChild(mainText);
   mainDiv.appendChild(mainText2);
 
+  // This loads up the buttons which are tabs to switch between website content
   function createTabs() {
     createMenuTab();
+    createContactUsTab();
   }
   createTabs();
-  createContactUsTab();
 }
 
 export default generateHomePage;
