@@ -12,17 +12,30 @@ function createMenuTab() {
 
   function createMenu() {
     const menu = document.createElement("div");
-    const menuItem = document.createElement("div");
     menu.classList.add("menu-container");
-    menuItem.classList.add("menuItem");
     mainDiv.appendChild(menu);
-    menu.appendChild(menuItem);
     createMenuItem();
-    return menu;
+
+    const foods = [
+      createMenuItem("kasza manna", "ugotuj kasze"),
+      createMenuItem("jajko na twardo", "ugotuj jajka"),
+    ];
+    foods.forEach((food) => {
+      menu.appendChild(food);
+    });
   }
 
-  function createMenuItem(name, description, menu) {
-    console.log(menu);
+  function createMenuItem(name, description) {
+    const menuItem = document.createElement("div");
+    menuItem.classList.add("menuItem");
+    const foodName = document.createElement("h1");
+    foodName.textContent = name;
+    const foodDescription = document.createElement("h4");
+    foodDescription.textContent = description;
+
+    menuItem.appendChild(foodName);
+    menuItem.appendChild(foodDescription);
+    return menuItem;
   }
 }
 
