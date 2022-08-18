@@ -11,6 +11,9 @@ function createMenuTab() {
   });
 
   function createMenu() {
+    createMenuTab();
+    createContactUsTab();
+
     const menu = document.createElement("div");
     menu.classList.add("menu-container");
     mainDiv.appendChild(menu);

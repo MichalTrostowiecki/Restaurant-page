@@ -1,29 +1,27 @@
-import createContactUsTab from "./Contacts";
-import createMenuTab from "./Menu";
-
 function generateHomePage() {
-  const mainDiv = document.querySelector("#content");
+  const mainDiv = document.createElement("div");
+  mainDiv.classList.add("homePage");
 
   const background = document.createElement("img");
   background.src = "../assets/mainpage.jpg";
   background.alt = "background-picture";
 
-  const mainText = document.createElement("p");
-  mainText.textContent = "Welcome to the best restaurant!";
-
-  const mainText2 = document.createElement("p");
-  mainText2.textContent = "Browse through our menu";
-
+  mainDiv.appendChild(createTextContent("Welcome to the best restaurant!"));
+  mainDiv.appendChild(createTextContent("Browse through our menu"));
   mainDiv.appendChild(background);
-  mainDiv.appendChild(mainText);
-  mainDiv.appendChild(mainText2);
 
-  // This loads up the buttons which are tabs to switch between website content
-  function createTabs() {
-    createMenuTab();
-    createContactUsTab();
-  }
-  createTabs();
+  return mainDiv;
 }
 
-export default generateHomePage;
+function createTextContent(text) {
+  const newText = document.createElement("p");
+  newText.textContent = text;
+  return newText;
+}
+
+function loadHome() {
+  const main = document.querySelector(".mainDiv");
+  main.textContent = "";
+  main.appendChild(generateHomePage());
+}
+export default loadHome;
