@@ -1,4 +1,6 @@
 import loadHome from "./Home";
+import loadMenu from "./Menu";
+import loadContacts from "./Contacts";
 
 function createMainDiv() {
   const mainDiv = document.createElement("div");
@@ -41,6 +43,7 @@ function createNavBar() {
   menuTab.addEventListener("click", (e) => {
     if (e.target.classList.contains("active")) return;
     setActiveTab(menuTab);
+    loadMenu();
   });
 
   const contactsTab = document.createElement("button");
@@ -50,6 +53,7 @@ function createNavBar() {
   contactsTab.addEventListener("click", (e) => {
     if (e.target.classList.contains("active")) return;
     setActiveTab(contactsTab);
+    loadContacts();
   });
 
   navDiv.appendChild(homeTab);
@@ -68,17 +72,17 @@ function setActiveTab(button) {
     }
   });
 
-  // this throws me an error
-  // button.classList.add("active");
+  button.classList.add("active");
 }
 
 function loadUpWebsite() {
-  const contentDiv = document.querySelector("#content");
+  const contentDiv = document.getElementById("content");
 
   contentDiv.appendChild(createHeader());
   contentDiv.appendChild(createNavBar());
   contentDiv.appendChild(createMainDiv());
-  setActiveTab();
+
+  setActiveTab(homeTab);
   loadHome();
 }
 
