@@ -5,7 +5,7 @@ function createContacts() {
   const tel = document.createElement("p");
   tel.textContent = "020 17823541";
   const email = document.createElement("p");
-  email.textContent = "misiek@gmail.com";
+  email.textContent = "somerandom@gmail.com";
 
   contacts.appendChild(tel);
   contacts.appendChild(email);
