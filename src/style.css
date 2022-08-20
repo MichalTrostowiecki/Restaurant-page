@@ -1,3 +1,16 @@
 body {
   background-color: rgb(52, 156, 156);
 }
+
+
+.headerDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.header-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}

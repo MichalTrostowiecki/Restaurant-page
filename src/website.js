@@ -25,6 +25,7 @@ function createHeader() {
 
 function createNavBar() {
   const navDiv = document.createElement("div");
+  navDiv.classList.add("header-btn");
 
   const homeTab = document.createElement("button");
   homeTab.classList.add("nav-btn");
