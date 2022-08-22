@@ -31,4 +31,18 @@ body {
 
 }
 
+.homePage {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 60vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+ }
+
+.homePage > p {
+
+}
 
