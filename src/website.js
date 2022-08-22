@@ -60,8 +60,9 @@ function createNavBar() {
   navDiv.appendChild(homeTab);
   navDiv.appendChild(menuTab);
   navDiv.appendChild(contactsTab);
+  headerDiv.appendChild(navDiv);
 
-  return navDiv;
+  return headerDiv;
 }
 
 function setActiveTab(button) {
