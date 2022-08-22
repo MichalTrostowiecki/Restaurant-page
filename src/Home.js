@@ -3,7 +3,11 @@ function generateHomePage() {
   mainDiv.classList.add("homePage");
 
   mainDiv.appendChild(createTextContent("Welcome to the best restaurant!"));
-  mainDiv.appendChild(createTextContent("Browse through our menu"));
+  mainDiv.appendChild(
+    createTextContent(
+      "If you're looking for a freshly made, delicious food you could not find a better place.Browse through our lovely menu and find something for yourself!"
+    )
+  );
 
   return mainDiv;
 }

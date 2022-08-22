@@ -17,7 +17,7 @@ function createHeader() {
 
   const resName = document.createElement("h1");
   resName.classList.add("resName");
-  resName.textContent = "Bawario";
+  resName.textContent = "Gastro Wit Inn";
   headerDiv.appendChild(resName);
 
   return headerDiv;

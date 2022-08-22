@@ -6,6 +6,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
+ 
   
   
 }
@@ -15,34 +16,83 @@ body {
   justify-content: center;
 }
 
-.header-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-attachment: fixed;
-}
 
 .headerDiv {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.596);
+  background-color: rgba(255, 255, 255, 0.61);
+  padding-bottom: 20px;
 
 }
 
 .homePage {
   display: flex;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.61);
   justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 60vh;
-  margin-left: 10vw;
-  margin-right: 10vw;
+  margin-top: 40px;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  border-radius: 20px;
  }
 
 .homePage > p {
+  font-style: oblique;
+  text-align: center;
+  margin: 20px;
+  font-size: 2rem;
+}
+
+.resName {
+  font-family :cursive;
+  font-size: 2.5rem;
+}
+
+.nav-btn {
+  cursor: pointer;
+  flex-wrap: wrap;
+  border: none;
+  text-align: center;
+  font-size: 1.1rem;
+  background: none;
+  text-transform: uppercase;
+  min-width: 10vw;
+}
+
+/* ------------------------------------- Menu Items ----------------------------- */
+.menu-container {
+  margin-top: 20px;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 60vh;
+  margin-top: 40px;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.61);
 
 }
 
+
+.menuItem {
+  padding: 10px;
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menuItem > h4 {
+  font-style: oblique;
+  max-width: fit-content;
+  text-align: center;
+}
+.menuItem > h2 {
+  font-family: monospace;
+}
