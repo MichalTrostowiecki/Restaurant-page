@@ -42,7 +42,7 @@ function createMenuItem(name, description, imageNumber) {
   foodDescription.textContent = description;
   const foodPicture = document.createElement("img");
   foodPicture.alt = "food";
-  foodPicture.src = `../assets/${imageNumber}`;
+  foodPicture.src = `../assets/images/${imageNumber}`;
   foodPicture.style.height = "20vh";
   foodPicture.style.width = "15vw";
 
